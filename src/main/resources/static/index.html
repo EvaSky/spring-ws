@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:form="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<h3>4.1 Test SOAP Web Services</h3>
+<ul>
+    <li>Get user by id=1:  <a href="http://localhost:8090/web-service/user/1">web-service/user/1</a></li>
+    <li>Get user by email dmitriy.vbabichev@gmail.com:  <a href="http://localhost:8090/web-service/user?email=dmitriy.vbabichev@gmail.com">web-service/user/dmitriy.vbabichev@gmail.com</a></li>
+    <li>Get user list by name Dmytro Babichev:  <a href="http://localhost:8090/web-service/users?name=Dmytro Babichev">web-service/user/Dmytro Babichev</a></li>
+    <li>Create new user: POST http://localhost:8090/web-service/user<br>
+        {<br>
+        "name": "Olga",<br>
+        "email": "olga@gmail.com",<br>
+        "birthday": "1990-10-10"<br>
+        }<br>
+    </li>
+    <li>Delete user: <a href="http://localhost:8090/web-service/user/delete/3">/web-service/user/delete/3</a></li>
+    <li>Get all events: <a href="http://localhost:8090/web-service/events">/web-service/events</a></li>
+</ul>
+</body>
+</html>
